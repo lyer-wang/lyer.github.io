@@ -1,0 +1,162 @@
+$device-list: 320px 360px 365px 375px 384px 412px 414px 750px;
+@each $width in $device-list {
+  @media screen and (min-width: #{$width}) {
+    html {
+      font-size: ($width/750) * 100;
+    }
+  }
+}
+
+body {
+  font-size: 0.16rem;
+  background-color: #ffffff;
+}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@mixin padding() {
+  width: 100%;
+  padding: 0 0.34rem;
+}
+
+.inner-width {
+  @include padding;
+}
+
+.header {
+  width: 100%;
+  height: 1rem;
+  background: #00d0ff;
+  @include padding;
+  color: #fff;
+  font-size: 0.36rem;
+  .top {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .arrow {
+      width: 0.45rem;
+      height: 0.45rem;
+      line-height: 0.45rem;
+      text-align: center;
+      font-size: 0.5rem;
+      font-family: '宋体';
+      a{
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+    .title {
+      height: 100%;
+      width: 5.3rem;
+      line-height: 1rem;
+      text-align: center;
+      span{
+        font-size: 0.45rem;
+      }
+    }
+    .none {
+      width: 0.45rem;
+      height: 0.45rem;
+    }
+  }
+
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  form {
+    width: 5.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.39rem 0 0.3rem 0;
+    .regist {
+      background: #00d0ff;
+      color: #ffffff;
+      font-size: 0.36rem;
+      border: none;
+    }
+    input {
+      width: 100%;
+      height: 0.9rem;
+      border: 0.02rem solid #c8c8c8;
+      letter-spacing: 0.01rem;
+      border-radius: 0.06rem;
+      outline: none;
+      margin-top: 0.39rem;
+    }
+  }
+
+}
+
+.runlogin {
+  width: 5.8rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #bcbcbc;
+    font-size: 0.28rem;
+  }
+}
+
+.footer {
+  margin: 0.4rem 0;
+  @include padding;
+  display: flex;
+  width: 100%;
+  height: 3.3rem;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  .line {
+    width: 100%;
+    height: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      height: 0.02rem;
+      width: 40%;
+      background: #909090;
+      display: block;
+    }
+    p {
+      color: #aaa;
+      font-size: 0.26rem;
+      span {
+        font-size: 0.34rem;
+      }
+    }
+  }
+  .avater {
+    width: 1.3rem;
+    height: 1.3rem;
+    img {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+  }
+  .agreement {
+    font-size: 0.24rem;
+    color: #bcbcbc;
+    a {
+      text-decoration: none;
+      color: #00d0ff
+    }
+  }
+}

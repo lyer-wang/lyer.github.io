@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="__PUBLIC__/css/login.css">
+    <title>&nbsp;&nbsp;&nbsp;&nbsp;</title>
+</head>
+<body>
+<!--头部开始-->
+<div class="header">
+    <div class="top">
+        <div class="title">登录金牛<span>e</span>族</div>
+        <div class="none"></div>
+    </div>
+</div>
+<div class="all">
+    <div class="footer">
+        <div class="avater">
+            <img src="__PUBLIC__/./img/logo.jpg" alt="">
+        </div>
+        <div class="line">
+            <p>金牛<span>e</span>族</p>
+        </div>
+
+        <!--<p class="agreement">-->
+        <!--<span>使用前请阅读<a href="#">《渠道服务协议》</a> </span>-->
+        <!--</p>-->
+    </div>
+    <!--内容开始-->
+    <div class="container">
+        <form action="<{:U('Home/Index/login')}>" method="post">
+            <input type="text" placeholder="用户名" name="username">
+            <input type="password" placeholder="密码" maxlength="16" name="password">
+            <div>
+                <input type="submit" value="登录" class="regist">
+                <input type="button" value="注册" class="login" onclick="location.href='<{:U("Home/Login/index")}>'">
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

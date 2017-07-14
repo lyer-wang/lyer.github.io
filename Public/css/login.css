@@ -1,0 +1,145 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 0.16rem; }
+
+input[type=button], input[type=submit], input[type=file], button {
+  cursor: pointer;
+  -webkit-appearance: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+.inner-width {
+  width: 100%;
+  padding: 0 0.34rem; }
+
+.header {
+  width: 100%;
+  height: 1rem;
+  background: #00d0ff;
+  width: 100%;
+  padding: 0 0.34rem;
+  color: #fff;
+  font-size: 0.36rem; }
+  .header .top {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .top .title {
+      height: 100%;
+      width: 5.3rem;
+      line-height: 1rem;
+      text-align: center; }
+      .header .top .title span {
+        font-size: 0.45rem; }
+
+.all {
+  width: 100%;
+  height: auto;
+  margin-top: 2.3rem; }
+  .all .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; }
+    .all .container form {
+      width: 5.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0.3rem 0; }
+      .all .container form div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .all .container form div .regist {
+          width: 45%;
+          background: #00d0ff;
+          color: #ffffff;
+          font-size: 0.36rem;
+          border: none; }
+        .all .container form div .login {
+          width: 45%;
+          background: #00d0ff;
+          color: #ffffff;
+          font-size: 0.36rem;
+          border: none; }
+      .all .container form input {
+        width: 100%;
+        height: 0.9rem;
+        border: 0.02rem solid #c8c8c8;
+        letter-spacing: 0.01rem;
+        border-radius: 0.06rem;
+        outline: none;
+        margin-top: 0.39rem; }
+  .all .footer {
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+    padding: 0 0.34rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; }
+    .all .footer .line {
+      width: 100%;
+      height: 0.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .all .footer .line p {
+        color: #aaa;
+        font-size: 0.4rem;
+        letter-spacing: 0.1rem;
+        color: #ff7e00;
+        font-weight: bold; }
+        .all .footer .line p span {
+          font-size: 0.55rem; }
+    .all .footer .avater {
+      width: 1.3rem;
+      height: 1.3rem; }
+      .all .footer .avater img {
+        width: 1.3rem;
+        height: 1.3rem; }
+    .all .footer .agreement {
+      font-size: 0.24rem;
+      color: #bcbcbc; }
+      .all .footer .agreement a {
+        text-decoration: none;
+        color: #00d0ff; }
